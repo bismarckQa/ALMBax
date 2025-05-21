@@ -1,0 +1,14 @@
+Feature: Delete Complementary Test
+
+Acceptance Criteria:
+- The user can access the user configuration module and view the list of configured complementary (supplementary) tests.
+- The user can attempt to delete a complementary test and cancel the action, resulting in the test remaining unchanged.
+- The user can successfully delete a complementary test that is not linked or referenced.
+- The user cannot delete a complementary test that is being referenced by other modules; the system must block the deletion and display an appropriate warning.
+
+
+| Scenario                                     | Expected Result                                                                                                          |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Cancelling delete complementary test         | The deletion process is initiated but cancelled by the user. The complementary test remains in the list without changes. |
+| Successful delete complementary test         | The selected complementary test is deleted successfully and removed from the configuration list.                         |
+| Delete complementary test that is referenced | The user attempts to delete a referenced complementary test. The system shows a warning message and prevents deletion.   |
