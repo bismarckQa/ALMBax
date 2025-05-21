@@ -1,0 +1,25 @@
+Acceptance Criteria – 
+Feature: Delete Category Configuration Complementary Test
+
+The user must be able to access the Baxter platform and log in with valid credentials.
+
+The user must be able to navigate to the patient and open the user configuration module.
+
+The user must be able to successfully delete an unreferenced category.
+
+If the deletion is initiated but cancelled by the user, no changes should be made and the category must remain visible.
+
+If the category is referenced (used in a dependency), a warning message must appear and deletion must be blocked.
+
+Expected Results
+
+Scenario: Successful delete category
+The selected category is deleted successfully, disappears from the list, and a confirmation message is displayed:
+"Category deleted successfully."
+
+Scenario: Cancelling delete category
+The deletion operation is aborted. The category remains visible in the list, and no confirmation or error message appears.
+
+Scenario: Delete category that is referenced
+A warning message is displayed preventing the deletion. The category remains unchanged in the list. Message shown:
+"This category cannot be deleted because it is currently in use."
