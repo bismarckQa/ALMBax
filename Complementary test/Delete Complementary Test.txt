@@ -1,0 +1,46 @@
+ Acceptance Criteria – Feature: Delete Complementary Test
+The user must be able to add, delete, or cancel the deletion of a complementary test.
+
+If a complementary test is linked to other modules (Accesses, Waiting List, Hospitalization), a warning must block the deletion.
+
+A test must only be deleted if it is not linked or if the dependency is removed first.
+
+Canceling a delete operation should leave the data intact.
+
+Once dependent data (Access, Waiting List, or Hospitalization) is deleted, the test can be deleted.
+
+The system must show confirmation and warning messages accordingly.
+
+ Expected Results per Scenario
+Scenario: Canceling a deleted complementary test
+The confirmation popup appears. The user clicks "No" and the test is not deleted. The test remains in the list.
+
+Scenario: Successful deleted complementary test
+The user clicks "Yes" in the confirmation popup. The test is deleted successfully and no longer appears in the list.
+
+Scenario: Warning message when trying to delete a complementary test with an Access
+A warning message appears: "This complementary test cannot be deleted because it is linked to an access." The test is not deleted.
+
+Scenario: Canceling deleted complementary test related to an access
+A warning appears due to the relation with an access. The user does not proceed with deletion. The test remains.
+
+Scenario: Delete data created of Accesses and Additional studies
+The access is deleted after entering the password. Then, the related complementary test is deleted successfully.
+
+Scenario: Warning message when trying to delete a complementary test with a waiting list
+A warning message appears: "This complementary test is associated with a waiting list and cannot be deleted." The test is not deleted.
+
+Scenario: Canceling deleted complementary test related to a waiting list
+A warning appears. The user does not confirm deletion. The test is not deleted.
+
+Scenario: Delete data created of waiting list and Additional studies
+The waiting list is deleted successfully. Then the complementary test associated with it is also deleted.
+
+Scenario: Warning message when trying to delete a complementary test with a Hospitalization
+A warning message appears: "This test is linked to a hospitalization and cannot be deleted." The test remains in the list.
+
+Scenario: Canceling deleted complementary test related to a Hospitalization
+The test is linked to a hospitalization. The warning appears. The user cancels the deletion. The test is not deleted.
+
+Scenario: Delete data created of Hospitalization and Additional studies
+The additional study is detached from the hospitalization, which is then deleted. Finally, the complementary test is deleted successfully.
