@@ -1,0 +1,24 @@
+Acceptance Criteria – Feature: Modify Category Configuration
+The user must be able to log in and access the configuration module of a patient.
+
+The user must be able to select and edit an existing category.
+
+If the user cancels the edit, no changes should be applied to the category.
+
+If the user attempts to edit a category using a name that already exists, the system must display a duplication warning and block the operation.
+
+If the user edits a category successfully, changes should be saved and reflected immediately.
+
+🔎 Expected Results per Scenario
+Scenario: Cancelling edit category
+The user initiates an edit but cancels it. The category remains unchanged and no confirmation or error message appears.
+
+Scenario: Duplicated record
+The user attempts to rename or create a category with a name that already exists. A system alert is shown:
+"A category with this name already exists. Please use a different name."
+The change is not saved.
+
+Scenario: Successful edit category
+The selected category is edited and saved correctly. The updated name/details appear in the category list, and a success message is displayed:
+"Category updated successfully."
+

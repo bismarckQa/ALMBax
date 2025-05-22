@@ -1,0 +1,17 @@
+Acceptance Criteria – Feature: Link Complementary Tests to a Category
+The user must be able to access the Baxter platform and log in successfully.
+
+The user must be able to access the user configuration module and view both test grids (left and right).
+
+The user must be able to associate (link) a complementary test to a category by dragging it from the left grid to the right grid.
+
+The user must be able to remove a complementary test from a category by dragging it from the right grid back to the left grid.
+
+Changes must be saved and reflected immediately in the UI without errors.
+
+🔎 Expected Results per Scenario
+Scenario: Add test to category
+A complementary test is successfully moved from the left grid to the right grid (category). The UI updates, and the test now appears under the selected category.
+
+Scenario: Remove test from category
+The complementary test is successfully moved from the right grid back to the left grid. The UI updates, and the test no longer appears under the category.
