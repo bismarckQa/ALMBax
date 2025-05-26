@@ -1,0 +1,19 @@
+Acceptance Criteria – Feature: View Configuration Complementary Tests
+The user must be able to access the configuration module after login.
+
+The system must display all existing categories of complementary tests.
+
+The system must display all complementary test records configured for the patient.
+
+The system must show all test-category relationships, reflecting linked configurations.
+
+🔎 Expected Results per Scenario
+Scenario: View Categories
+All existing complementary test categories are listed correctly in the configuration module. The user is able to view names, descriptions, and relevant metadata for each category.
+
+Scenario: View Complementary tests
+All configured complementary tests are displayed correctly, showing full detail for each test in the configuration module.
+
+Scenario: View relation Categories Tests
+The system displays the relationship between categories and complementary tests. For each category, the associated tests are shown accurately.
+
