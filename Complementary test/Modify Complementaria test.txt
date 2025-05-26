@@ -1,0 +1,27 @@
+ Acceptance Criteria – Feature: Modify Complementary Test
+The user must be able to create, view, and edit a complementary test.
+
+When editing a test, the user must be able to cancel the operation and retain the original data.
+
+The system must block the ability to save if required fields (e.g., date) are empty.
+
+Changes must persist after logout/login sequences.
+
+The system must confirm and display changes after a successful edit.
+
+The user must be able to verify if a newly edited test has the correct updated values.
+
+The server must support creation and update operations without failure.
+
+🔎 Expected Results per Scenario
+Scenario: Canceling an edited complementary test
+The test is created and saved correctly. Upon attempting to edit, the user cancels the operation. After logging back in, the original test data remains unchanged. The test is then successfully deleted.
+
+Scenario: Edit a complementary test with empty required fields
+After deleting the Date of Record during an edit, the Save button is not shown. The user logs out and logs back in, confirming that no changes were saved. The test is then deleted successfully.
+
+Scenario: Successful edited complementary test
+The complementary test is edited with a new description and reception date. After saving and logging back in, the updated test appears with the new description "QATestEdit". The test is then deleted successfully.
+
+Scenario: Check the Server Functionality to CREATE data in Complementary Test
+A test is created for a patient group "Pacientes en HD". After logging out and back in, the test is edited with new data, saved, and confirmed after another login. The updated test with description "QATestEdit" is found and deleted successfully.
