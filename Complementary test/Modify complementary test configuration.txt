@@ -1,0 +1,20 @@
+ Acceptance Criteria – Feature: Modify Complementary Test Configuration
+The user must be able to access and edit a complementary test in the configuration module.
+
+If the user cancels the edit, no changes must be saved.
+
+If the user tries to duplicate a complementary test that already exists, the system must prevent it and display an appropriate warning message.
+
+When an edit is successful, the changes must be saved and immediately reflected in the user interface.
+
+🔎 Expected Results per Scenario
+Scenario: Cancelling edit complementary test
+The edit process is started but cancelled. No changes are saved, and the complementary test remains as originally displayed.
+
+Scenario: Duplicated record Supplementary Test
+An attempt to duplicate an existing complementary test is made. The system blocks the action and displays an alert:
+"This complementary test already exists. Duplication is not allowed."
+
+Scenario: Successfully edit complementary test
+The selected complementary test is edited and saved successfully. The updated information appears correctly in the interface, and a success message is shown:
+"Complementary test updated successfully."
