@@ -1,0 +1,23 @@
+Acceptance Criteria – Feature: Generate a Notification HD Prescription
+The user must be able to configure the notification profile to generate alerts for new or modified HD prescriptions.
+
+When a new HD prescription is created and the notification profile is active, a notification (bell icon) must increment.
+
+When a prescription is modified, and notifications are enabled, the bell icon must also increment.
+
+If the notification profile is disabled, creating a new HD prescription must not trigger a notification.
+
+The notification indicator (bell icon) must clearly reflect the number of new alerts.
+
+ Expected Results per Scenario
+Scenario: Configure notification profile to generate with new HD prescription
+The user sets up the notification profile correctly. The system stores the configuration to generate alerts upon creating new HD prescriptions.
+
+Scenario: New HD Prescription is created, a notification is generated
+After creating a new simple prescription, the bell icon appears and its value increases by 1, confirming the notification was triggered.
+
+Scenario: HD Prescription is modified, a Notification indicates the change
+When a prescription is modified, the bell icon updates, increasing by 1. The system successfully registers the edit as a trigger for notification.
+
+Scenario: New HD Prescription is created but notification is not generated
+The user disables the notification profile. After creating a new prescription, the bell icon value does not change, confirming that no alert was triggered.

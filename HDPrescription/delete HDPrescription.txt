@@ -1,0 +1,21 @@
+Acceptance Criteria – Feature: Delete HD Prescription
+The user must be able to view active HD prescriptions.
+
+If a prescription has been used in treatment, the system must not allow deletion and must show a warning.
+
+If the deletion is canceled during the process, the prescription must remain unchanged.
+
+If no treatment record is linked to the prescription, the user must be able to delete it successfully.
+
+ Expected Results per Scenario
+Scenario: Delete Active HD Prescription (prescription used in a treatment)
+The system detects that the HD prescription has associated treatment records and prevents deletion. A warning message is shown:
+"This prescription cannot be deleted because it has associated treatments."
+
+Scenario: Cancelling a deleted active HD Prescription
+The user initiates the delete action but cancels it. The prescription remains visible and unchanged in the HD Prescription module.
+
+Scenario: Successful delete active HD Prescription
+The HD prescription is successfully deleted. It disappears from the list, and a confirmation message is displayed:
+"Prescription deleted successfully."
+

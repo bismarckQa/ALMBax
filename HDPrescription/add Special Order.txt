@@ -1,0 +1,23 @@
+Acceptance Criteria – Feature: Add Special Order
+The user must be able to access the HD Prescription module.
+
+The user must be able to create a new special order by providing the required information.
+
+If the user clicks "Add Special Order" but cancels the operation, no data should be saved.
+
+If required fields are empty, the system must not show the Save button, preventing submission.
+
+Upon successfully completing a special order, it must be saved and visible in the list or summary view.
+
+ Expected Results per Scenario
+Scenario: Created new special order
+The user accesses the HD Prescription module and creates a new special order successfully. The order is saved and visible in the patient’s prescription data.
+
+Scenario: Canceling an added special order
+The user clicks the "Add Special Order" button but cancels the operation. No data is saved, and no changes are reflected in the patient record.
+
+Scenario: Add new special order with empty required fields
+The user attempts to add a special order but leaves required fields empty. The Save button is not displayed, and the user cannot proceed.
+
+Scenario: Successful added special order
+The user completes all required fields in the special order form and submits it. The special order is saved correctly and displayed in the HD Prescription module.
