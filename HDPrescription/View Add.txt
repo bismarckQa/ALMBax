@@ -1,0 +1,33 @@
+Acceptance Criteria – Feature: View + Add HD Prescription
+The user must be able to create a new Access before prescribing HD (hemodiálisis).
+
+The system must allow creating a new access with the required fields:
+
+Access Type
+
+Location
+
+Comment
+
+The user must be able to open the HD Prescription module after login.
+
+The HD Prescription module must load correctly and display all relevant fields.
+
+The field Prescribe by must be present and show the appropriate prescribing physician or system data.
+
+ Expected Results per Scenario
+Scenario: New Access
+A new jugular catheter access is created with:
+
+Access Type: Catéter percutáneo yugular
+
+Location: Muñeca izquierda
+
+Comment: QA test
+The system saves the Access Data Implantation successfully and reflects it in the list.
+
+Scenario: View + Add HD Prescription
+The HD Prescription module opens correctly after patient selection.
+The system displays all required fields, including:
+
+Prescribe by field, which shows the name of the prescribing physician or responsible entity.
