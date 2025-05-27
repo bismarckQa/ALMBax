@@ -1,0 +1,21 @@
+Acceptance Criteria – Feature: View Prescription History
+The user must be able to log in and select a patient.
+
+The HD Prescription module must load correctly for the selected patient.
+
+The system must visually differentiate the current prescription from historical ones:
+
+The current prescription must appear in green.
+
+The closed (historical) prescriptions must appear in blue.
+
+All prescriptions must be visible and clearly identifiable.
+
+ Expected Result – Scenario: View Prescription History
+The HD Prescription module opens correctly.
+The user sees:
+
+The current prescription highlighted in green.
+
+All closed prescriptions listed in blue, showing their historical status.
+The color distinction is clear and reflects the state of each prescription accurately.
