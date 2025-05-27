@@ -1,0 +1,24 @@
+Acceptance Criteria – Feature: View Questionnaire
+The user must be able to log in successfully and access the group of patients labeled "Paziente PD".
+
+The user must be able to select a patient and open the PD Prescription module.
+
+The PD Prescription module must load correctly and display the Questionnaire section.
+
+The questionnaire view must include the following fields:
+
+Questionnaire Name
+
+Active (Yes/No) status
+
+All Questions included in the questionnaire
+
+ Expected Result – Scenario: View Questionnaire
+The PD Prescription module is loaded successfully.
+The system displays the questionnaire view, including the fields:
+
+Questionnaire Name
+
+Active status (Yes/No)
+
+All Questions associated with the questionnaire
