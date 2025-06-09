@@ -1,0 +1,17 @@
+Acceptance Criteria – Feature: Viewing Medication Administration History At Chair Side
+The user must be able to configure a specific lab result profile from a list of active laboratory profiles.
+
+The system must allow users to view medication administration history directly within the HD Treatment module.
+
+The user must be able to select a date range (e.g., past months) and run a query to retrieve the medication history.
+
+The query must return a chronological list of administered medications related to the selected patient.
+
+ Expected Results per Scenario
+Scenario: Clone Add configuration for laboratory result options in "HD Therapy" section
+The user opens the configuration module and selects one lab profile from the list of active laboratories.
+The configuration is saved and used for lab result filtering within HD Therapy.
+
+Scenario: Add medication administration history screen to HD treatment
+Inside the HD Treatment module, the user selects a range of past months and runs a query.
+The system retrieves and displays the Medication Administration History, showing all relevant records chronologically.

@@ -1,0 +1,22 @@
+ Acceptance Criteria – Feature: Ability to View Lab Results for Medication Administration
+The user must be able to log in and access the HD Therapy section via the configuration module.
+
+The system must allow the user to:
+
+Select a lab profile from a list of available/active profiles.
+
+Set a date range for lab results.
+
+Save the selected configuration.
+
+The configuration must persist and be applied when viewing lab data in HD Therapy.
+
+ Expected Results per Scenario
+Scenario: Add configuration for laboratory result options in "HD Therapy" section
+The user selects an active lab profile and defines a date range.
+Upon saving, the system confirms that the configuration has been stored.
+Lab results shown in HD Therapy reflect the chosen profile and range.
+
+Scenario: Clone Add configuration for laboratory result options in "HD Therapy" section
+This is a repeated/duplicate scenario. The system again allows the user to set and save a lab profile and date range.
+Changes are saved and applied consistently, just like in the first scenario.

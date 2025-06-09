@@ -1,0 +1,27 @@
+Acceptance Criteria – Feature: Regression Test Modify Complementary Test
+The system must allow users to edit complementary tests and save the changes successfully.
+
+If the user cancels an edit, the original data must remain unchanged.
+
+If a required field (e.g., Date of Record) is removed, the Save button must be hidden to block invalid submissions.
+
+After logging out and back in, edits must persist only if saved.
+
+Users must be able to validate server functionality to ensure that data creation and update operations work correctly across patient groups.
+
+🔎 Expected Results per Scenario
+Scenario: Canceling an edited complementary test
+The user edits the test but cancels the operation. After logout and login, the original values remain. The new data (QATestEdit) is not saved. The test is then deleted successfully.
+
+Scenario: Edit a complementary test with empty required fields
+The user deletes a required field (e.g., Date of Record). The Save button does not appear.
+After logout/login, the original test remains unchanged, confirming the edit was not applied. The test is deleted afterward.
+
+Scenario: Successful edited complementary test
+The user edits the test with a new reception date and description (QATestEdit).
+After logout and login, the updated values are displayed. The test is then deleted successfully.
+
+Scenario: Check the Server Functionality to CREATE data in Complementary Test
+A test is added and later edited by a user in the “Pacientes en HD” group.
+The updated test (QATestEdit) is retrieved correctly after logout/login.
+This confirms the backend supports create + edit + persist actions. The test is deleted afterward.

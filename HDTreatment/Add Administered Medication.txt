@@ -1,0 +1,29 @@
+Acceptance Criteria – Feature: Add Administered Medication
+The user must be able to configure how lab results are fetched and displayed in the HD Treatment – Medication Administration section.
+
+The system must show the most recent lab results in the treatment module, according to the configured interval or maximum date range.
+
+If no treatment exists, the system must allow the user to create one.
+
+Lab results shown in the medication section must align with the selected configuration (profile and range).
+
+The system must include an endpoint capable of retrieving the last lab result for a specific profile.
+
+Expected Results per Scenario
+Scenario: Add the most recent lab result table in HD Treatment - Medication Administration
+The user configures the latest lab result interval.
+When accessing the HD Treatment module:
+
+If no treatment exists, one is created.
+
+The lab results are shown correctly under the “drugs and other” section.
+
+The data corresponds to the most recent available according to the configuration.
+
+Scenario: Add configuration for laboratory result options in "HD Therapy" section
+The user configures the maximum date range for lab results.
+The configuration is saved and will apply to any future HD Therapy lab result queries.
+
+Scenario: Create new endpoint to get the last lab result for specific profile
+The system includes a functional endpoint that allows querying the most recent lab result based on the selected lab profile from the configuration section.
+This ensures integration with real-time lab result display in medication administration.

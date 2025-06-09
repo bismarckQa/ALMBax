@@ -1,0 +1,23 @@
+Acceptance Criteria – Feature: Regression Test Add New Complementary Test
+The user must be able to add a new complementary test by entering valid required data.
+
+The system must allow cancelling the creation of a test without saving any data.
+
+If required fields are missing (e.g., test field), the Save button must not be available.
+
+After a successful creation, the complementary test must appear in the list and be deletable.
+
+The backend must support creating and persisting test records correctly (server functionality).
+
+ Expected Results per Scenario
+Scenario: Canceling an added complementary test
+The user fills in the data but cancels the creation before saving. The test is not created or listed. A check confirms that no record has been added.
+
+Scenario: Successful Added Complementary Tests
+The user fills in the required data and saves the test. It appears in the list with the correct description. The user deletes it successfully afterward.
+
+Scenario: Add a complementary test with empty required fields
+The user omits a required field (e.g., test type). The system does not display the Save button, preventing incomplete submissions.
+
+Scenario: Check the Server Functionality to CREATE data in Complementary Test
+Using a different user group ("Pacientes en HD"), the user adds and saves a test. The system confirms it was created successfully. It is then deleted as part of the cleanup.

@@ -21,3 +21,8 @@ When a prescription is modified, the bell icon updates, increasing by 1. The sys
 
 Scenario: New HD Prescription is created but notification is not generated
 The user disables the notification profile. After creating a new prescription, the bell icon value does not change, confirming that no alert was triggered.
+
+
+dani.gomez05@icloud.com
+
+670292566

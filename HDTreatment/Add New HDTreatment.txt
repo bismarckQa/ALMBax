@@ -1,0 +1,26 @@
+Acceptance Criteria – Feature: Add New HDTreatment
+The system must prevent the creation of a new HD Treatment if no active HD Prescription exists and must display an alert.
+
+The user must be able to create a new HD Prescription before starting an HD Treatment.
+
+When a new HD Treatment is started, tabs such as Preparation and Admin drug other must be accessible.
+
+In the Treatment History, the value for "Convection Volume" must reflect the last observation recorded in the Session tab.
+
+ Expected Results per Scenario
+Scenario: New Treatment without active HD Prescription
+The user attempts to add a new HD Treatment.
+The system blocks the action and displays an alert window, indicating that a prescription is required.
+The user closes the alert without proceeding.
+
+Scenario: Add New HD Prescription
+The user successfully creates a new simple HD prescription.
+The prescription is saved and becomes available for use in HD Treatment.
+
+Scenario: New Treatment with active HD Treatment
+With an active prescription, the user adds a new HD Treatment.
+The Preparation and Admin drug other tabs are available and open correctly.
+
+Scenario: In HD Treatment - Treatment History, the value for "Convection Volume" must be the last observation value
+The user adds a new observation in the Session tab.
+Upon saving, the Treatment History correctly displays the "Convection Volume" value from the most recent observation.

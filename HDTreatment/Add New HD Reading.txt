@@ -1,0 +1,24 @@
+Acceptance Criteria – Feature: Add New HD Reading (Session)
+The user must be able to delete an active HD Treatment session, confirming the action through an alert with justification.
+
+The user must be able to cancel a deletion and retain the session.
+
+The system must allow the deletion of finalized HD Treatments, provided the user confirms and enters a reason.
+
+All delete actions must include a confirmation alert with a required field to specify a reason.
+
+Cancelled operations must not affect any data.
+
+ Expected Results per Scenario
+Scenario: Delete an active HD Treatment
+The user opens the HD Treatment module and clicks to remove the current active session.
+The system displays a confirmation alert. After entering the reason ("TestQA") and accepting, the treatment is deleted successfully and removed from the list.
+
+Scenario: Cancelling an active HD Treatment
+The user initiates the removal of the treatment, but cancels the operation from the alert window.
+The HD Treatment session remains intact with no changes.
+
+Scenario: Delete a finalized HD Treatment (treatment must be finalized)
+The user opens a finalized treatment and proceeds to delete it.
+The system shows the alert window. Upon confirmation and entering the reason ("TestQA"), the treatment is deleted successfully.
+

@@ -1,0 +1,27 @@
+Acceptance Criteria – Feature: Add Final Signature
+The system must enforce required fields only at the moment of finalizing the treatment.
+
+Users with different roles (e.g., nephrologist, nurse) must be able to add a final signature if their role allows it.
+
+Once a treatment is finalized and signed, the system must enable read-only mode for that record.
+
+If there are changes to prescription fields during treatment, they must be shown in the final notes.
+
+The nurse profile must be able to finalize treatment if the nephrologist signature is not required by configuration.
+
+ Expected Results per Scenario
+Scenario: Adapt the functionality of the required field configuration only for the treatment finalization
+The system enforces completion of required fields only when attempting to finish the treatment. If any required field is missing, the user is notified and cannot finalize.
+
+Scenario: Add final signature with Nephrologist profile
+A user with the nephrologist profile signs the treatment. The final signature is registered and visible in the treatment summary.
+
+Scenario: Add final signature with Nephrologist profile (finalized treatment)
+After finalizing the treatment, the system sets the treatment to read-only mode. No further modifications are allowed.
+
+Scenario: Show an extract of the prescription changes of the treatment on the final notes
+Any prescription fields changed during the treatment are listed in the final notes section upon finalization.
+
+Scenario: Add final signature with nurse profile
+The nurse profile finalizes the treatment without the nephrologist signature (as it's not required). The treatment is closed, and the system records it as valid.
+

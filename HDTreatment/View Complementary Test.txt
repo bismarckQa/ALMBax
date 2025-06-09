@@ -1,0 +1,26 @@
+Acceptance Criteria – Feature: View Complementary Test
+The system must support automatic filtering of complementary tests when accessed from related modules (e.g., Accesses).
+
+When a new complementary test is added while a relation (like Access) is active, it must be assigned automatically or manually to that relation.
+
+The filter menu must allow filtering by category.
+
+If no filter is selected, the system must show all complementary tests for the patient.
+
+After deleting related Accesses, all related complementary tests must be removable.
+
+🔎 Expected Results per Scenario
+Scenario: Automatic filter of Complementary Tests from Access section
+The test is created and associated with an access. When navigating through “See Further Test” > “Attached Test”, the system automatically filters and shows only the linked test.
+
+Scenario: In Compl. Tests, while the section is filtered by relationship, the new Compl. Tests should be assigned to the relation if requested: from Access
+The new test is created and linked to the access while the section is filtered. The test is successfully assigned, and the filter reflects it properly.
+
+Scenario: Automatic filter of Complementary Tests from Access section (category filter)
+When the user filters by a specific category (e.g., “category test 1”), only complementary tests from that category are shown. The filter works as expected.
+
+Scenario: Without filtering Complementary Tests by its Categories
+If the user does not select any filter, the system shows all complementary tests associated with the patient.
+
+Scenario: Delete data created of Accesses and Additional studies
+The user deletes the Access entry (with credentials/password). After this, all previously created complementary tests related to it are deleted successfully.

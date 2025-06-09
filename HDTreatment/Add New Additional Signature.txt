@@ -1,0 +1,18 @@
+Acceptance Criteria – Feature: Add New Additional Signature
+When a nurse finalizes a treatment, the system must automatically fill the "Signed by" field in the "Additional Signatures" section.
+
+If a treatment is finalized, it must enter read-only mode, showing the Final and Additional signatures.
+
+If the nephrologist's signature is required and missing, the system must show an alert and block finalization.
+
+Expected Results per Scenario
+Scenario: Check whether in the HD Treatment tab, the field "signed by" in the "additional signatures" section is filled if the user is a nurse
+When the nurse creates and finalizes the treatment, the system automatically fills the "Signed by" field with the nurse’s information in the "Additional Signatures" section.
+
+Scenario: Add additional signature (Finalized treatment Nurse profile)
+After finalizing the treatment, the nurse sees the treatment in read-only mode, with the "Final Signature" and "Additional Signatures" displayed correctly.
+
+Scenario: Add additional signature (finalized treatment nephrologist profile)
+The nephrologist tries to finalize the treatment without adding their required signature.
+The system blocks the action and displays an alert:
+"The final signature by a nephrologist is required to complete this treatment."

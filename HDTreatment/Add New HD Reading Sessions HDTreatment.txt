@@ -1,0 +1,34 @@
+Acceptance Criteria – Feature: Add New HD Reading Sessions HDTreatment
+The user must be able to create a new HD prescription for a patient.
+
+The system must allow creating a new HD treatment if one is not active.
+
+The user must be able to add a reading/observation entry to an active HD treatment.
+
+Observations can be:
+
+Empty (test setup)
+
+Fully filled (complete session data)
+
+Users must be able to delete observations, with confirmation and a reason.
+
+The system must validate whether the new observation was saved or removed.
+
+ Expected Results per Scenario
+Scenario: Add New HD Prescription
+The user successfully creates a simple new prescription for the patient.
+The prescription appears in the HD Prescription module and is available for treatment association.
+
+Scenario: New Treatment with active HD Treatment
+The user accesses the three-dot menu and selects “Add new HD Treatment”.
+A new active treatment session is initialized and available for interaction.
+
+Scenario: Add new reading register to an active HD Treatment (empty registry)
+The user adds a new observation without filling any fields, saves it, and confirms that the data is empty.
+The user removes the observation, confirms the deletion, and enters the reason "TestRemove".
+The observation is successfully removed, and the register remains empty.
+
+Scenario: Add new reading register to an active HD Treatment (Full registry)
+The user adds a new observation and fills all fields (e.g., with values "1"), then saves it.
+The observation is stored, and the system confirms it is filled and displayed correctly in the session tab.

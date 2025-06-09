@@ -1,0 +1,19 @@
+ Acceptance Criteria – Feature: Ensure Laboratory Result Has Been Reviewed Before Medication Can Be Administered
+The system must prompt a confirmation checkbox in the medication administration popup.
+
+The checkbox must confirm that the user has reviewed the latest lab results before proceeding.
+
+The system must prevent medication administration if the checkbox is not selected.
+
+Once the user confirms, the medication can be added/administered successfully.
+
+ Expected Result – Scenario: Add a confirmation that the lab results have been reviewed by the user before administering a medication
+When attempting to administer a medication in the HD Treatment module:
+
+A popup window appears with a checkbox asking the user to confirm lab result review.
+
+If the checkbox is selected, the user can proceed to add the medication.
+
+If the checkbox is not selected, the system prevents the action.
+
+Once confirmed, the medication is administered and recorded successfully.
